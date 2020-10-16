@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <!--CSS VARIABLES MUST BE INHERITED FROM PARENT CLASS-->
+        body{
+            background: black;
+            --top:pink;
+            --css-middle:green;
+            --css-bottom:teal;
+        }
+
+        .box-top{
+            background:var(--top,orange);
+            width:100px;
+            height:15px;
+        }
+
+        .box-middle{
+            background:var(--css-middle,orange);
+            width:100px;
+            height:15px;
+        }
+
+        .box-bottom{
+            background:var(--css-bottom,orange);
+            width:100px;
+            height:15px;
+        }
+        #grid{
+            display:grid;
+            grid-gap:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">   
+        <div class="box-top"></div>
+        <div class="box-top"></div>
+        <div class="box-top"></div>
+        <div class="box-middle"></div>
+        <div class="box-middle"></div>
+        <div class="box-middle"></div>
+        <div class="box-bottom"></div>
+        <div class="box-bottom"></div>
+        <div class="box-bottom"></div>
+    </div>
+
+</body>
+</html>
