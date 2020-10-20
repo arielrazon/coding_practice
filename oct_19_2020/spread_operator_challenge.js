@@ -11,3 +11,5 @@
 */
 
 const shoppingList = ["eggs", "milk", "butter"];
+
+const shoppingBasket = [...shoppingList, "sleeping pills", "jeans","belt"]
