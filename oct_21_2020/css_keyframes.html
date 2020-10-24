@@ -26,9 +26,31 @@
         }
     }
 
+    #button{
+        background-color:lightseagreen;
+    }
+
+    #button:hover{
+        animation-name:button;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+
+    }
+
+    @keyframes button{
+        50%{
+            background-color:red;
+        }
+        100%{
+            background-color:lightseagreen;
+        }
+    }
+
     </style>
 </head>
 <body>
     <div id="rect"></div>
+
+    <div id="button">click here</div>
 </body>
 </html>
